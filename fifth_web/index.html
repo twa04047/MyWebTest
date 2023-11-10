@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Demo Project</h1>
+    <form action="" method="GET">
+      <section>
+        <h2>Personal Imformation</h2>
+        <ul>
+          <li>
+            <label for="username">Your Name</label>
+            <input type="text" name="user-name" id="username" required placeholder="Jiho Jang"/>
+          </li>
+          <li>
+            <label for="email">Your Email</label>
+            <input type="text" name="user-email" id="email" required minlength="7"/>
+          </li>
+          <li>
+            <label for="password">Password</label>
+            <input type="password" name="user-password" id="password" required/>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <ul>
+          <h2>More Details</h2>
+          <li>
+            <label for="age">Age</label>
+            <input type="number" step="1" name="user-age" id="age" required min="18" max="100"/>
+          </li>
+          <li>
+            <label for="date">Birthdate</label>
+            <input type="date" name="Birthdate" id="date" required min="1996-01-01" max="2023-01-01"/>
+          </li>
+          <li>
+            <label for="your-color">Your favorite color?</label>
+            <select id="your-color" name="your-color">
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="yellow">Yellow</option>
+            </select>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <label for="usermessage">Your message</label>
+        <textarea name="user-message" id="usermessage" rows="8"></textarea>
+      </section>
+
+      <section>
+        <h2>How should we verify your accout?</h2>
+        <ul>
+          <li class="form-control-inline">
+            <input
+              type="radio"
+              name="verify"
+              id="verify-text-message"
+              value="text-message"
+              required
+            />
+            <label for="verify-text-message">verify-text-message(SMS)</label>
+          </li>
+          <li class="form-control-inline">
+            <input type="radio" name="verify" id="verify-phone" value="phone" required/>
+            <label for="verify-phone">verify-phone</label>
+          </li>
+          <li class="form-control-inline">
+            <input type="radio" name="verify" id="verify-email" value="email" required/>
+            <label for="verify-email">verify-email</label>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How we should contact you?</h2>
+        <ul>
+          <li class="form-control-inline">
+            <input
+              type="checkbox"
+              name="contact"
+              id="contact-email"
+              value="email"
+            />
+            <label for="contact-email">Email</label>
+          </li>
+          <li class="form-control-inline">
+            <input
+              type="checkbox"
+              name="contact"
+              id="contact-phone"
+              value="phone"
+            />
+            <label for="contact-phone">Phone</label>
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section>
+        <div class="form-control-inline">
+          <input type="checkbox" name="terms" id="agree-terms" />
+          <label for="agree-terms">Agree to Terms?</label>
+        </div>
+      </section>
+
+      <section>
+        <button type="submit">Submit</button>
+      </section>
+    </form>
+  </body>
+</html>
