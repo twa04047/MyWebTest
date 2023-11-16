@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <form action="" method="get">
+      <section>
+        <h2>How can we help you</h2>
+        <ul>
+          <li>
+            <label for="your-name">Your Name</label>
+            <input
+              type="text"
+              id="your-name"
+              name="name"
+              required
+              placeholder="Jiho Jang"
+            />
+          </li>
+          <li>
+            <label for="your-email">Your E-Mail Address</label>
+            <input
+              type="email"
+              id="your-email"
+              name="email"
+              required
+              placeholder="twa04047@naver.com"
+            />
+          </li>
+          <li>
+            <label for="your-number">Your Phone Number</label>
+            <input type="text" id="your-number" name="number" />
+          </li>
+          <li>
+            <label for="your-message">Your Message</label>
+            <textarea name="message" id="your-message"></textarea>
+          </li>
+          <li>
+            <label for="find-us">How did you find us?</label>
+            <select name="find-us" id="find-us">
+              <option value="web-search">Web Search</option>
+              <option value="call-number">Call Number</option>
+              <option value="by-sns">By SNS</option>
+            </select>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How should we reply?</h2>
+        <ul>
+          <li class="reply">
+            <input type="radio" id="call-me" name="we-reply" value="call" />
+            <label for="call-me">Call me</label>
+          </li>
+          <li class="reply">
+            <input type="radio" id="send-email" name="we-reply" value="email" />
+            <label for="send-email">Send me an email</label>
+          </li>
+          <li class="reply">
+            <input type="radio" id="dont-reply" name="we-reply" value="dont" />
+            <label for="dont-reply">Don't reply</label>
+          </li>
+        </ul>
+      </section>
+
+      <section id="reply-checkbox">
+        <div class="reply">
+          <input type="checkbox" name="terms" id="terms"/>
+          <label for="terms">Accept Terms</label>
+        </div>
+      </section>
+
+      <section id="button-check">
+        <button id="button1">Clear</button>
+        <button id="button2">Submit</button>
+      </section>
+    </form>
+  </body>
+</html>
